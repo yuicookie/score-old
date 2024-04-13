@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>スコア計算ツール</title>
+  <title>リーグ周回用</title>
+  <link rel="apple-touch-icon" type="image/png" href="apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="icon-192x192.png">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
 </head>
@@ -13,20 +15,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <form class="diet_form">
       <dl>
-          <dt>スコア：</dt>
-          <dd><input type="number" class="box" name="lastscore"></dd>
+          <dt>目標スコア：</dt>
+          <dd><input class="box" name="lastscore" placeholder="1億3000万"></dd>
           <dt>現在のレベル：</dt>
-          <dd><input type="number" class="box" name="level"></dd>
+          <dd><input type="number" class="box" name="level" value="100"></dd>
           <p><input type="button" class="calc-btn" onclick="calc(lastscore.value, level.value);" value="計算"></p>
 
           <dt>素点：</dt>
-          <dd><input id="fastscore" class="box" type="number" readonly=""></dd>
-          <dt>レベル100のスコア：</dt>
-          <dd><input id="level100" class="box" type="text" readonly=""></dd>
+          <dd><input id="fastscore" class="box" readonly=""></dd>
+          <dt>スコア追加15%あり：</dt>
+          <dd><input id="level100" class="box" readonly=""></dd>
       </dl>
   </form>
-  <p>쿠키런forKakaoのスコア計算ツールです。<br>
-  スコア結果とプレイヤーレベルを入力すると<br>
-  素点とレベル100のスコアを表示します。<br>
-  <span style="color: #ff0000" class="text-color">※レベル50未満には対応していません。</span></p></body>
+  <p>쿠키런 for Kakaoのスコア計算ツールです。<br>
+  到達したい目標スコアとプレイヤーレベルを入力すると素点とブーストアイテム使用時のスコアを表示します。<br>
+  <span style="color: #ff0000" class="text-color">※レベル50未満には対応していません。</span><br>
+  <b>・｢億｣と｢万｣に対応しました！</b></p></body>
 </html>
